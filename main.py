@@ -29,7 +29,6 @@ def capture_and_process():
             
             # ---> TRIGGER THE HARDWARE LED SIGNAL <---
             set_caps_lock(False)
-            set_caps_lock(False);
             signal_answer(result)
             
         except Exception as e:
@@ -51,9 +50,9 @@ def on_key_event(event):
 
 keyboard.hook(on_key_event)
 
-print("Stealth Agent is online.")
+print("Agent Sakthi is online.")
 print(f"Type '{SECRET_CODE}' anywhere to trigger.")
-print("Watch your Scroll Lock LED for the answer!")
+print("Watch your Caps Lock LED for the answer!")
 print("Press 'ESC' to exit.")
 
 keyboard.wait('esc')

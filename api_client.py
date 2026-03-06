@@ -29,7 +29,7 @@ def analyze_image(base64_image):
         }
         
         # Your strict instruction prompt
-        prompt = "Analyze this screenshot. If it contains a multiple choice question, provide the correct option just give the option alone. if it contains multiple correct answers give all the correct options only remember options only."
+        prompt = "Analyze this screenshot. If it contains a multiple choice question, provide the correct option just give the option alone. if it contains multiple correct answers give all the correct options only remember options only. the answer u provide only must contain the options [A,B,c,D ...]"
         
         # Send both the prompt and the image dictionary to the model
         response = model.generate_content([prompt, image_part])
